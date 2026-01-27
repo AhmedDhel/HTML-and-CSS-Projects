@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #1aa6b7;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right input {
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+}
+
+.nav-right button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #0b7285;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-right button:hover {
+  background-color: #095c6a;
+}
+
+/* Main layout */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+/* Movie cards */
+.movies {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 320px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Showtime buttons */
+.times {
+  margin-top: 10px;
+}
+
+.times span {
+  display: inline-block;
+  background-color: #1aa6b7;
+  color: white;
+  padding: 5px 8px;
+  margin: 3px 3px 0 0;
+  border-radius: 12px;
+  font-size: 12px;
+}
